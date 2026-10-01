@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DNSGuard</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+            --border-color: #334155;
+            --badge-bg: #0369a1;
+            --code-bg: #0f172a;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-color: #f8fafc;
+                --card-bg: #ffffff;
+                --text-primary: #0f172a;
+                --text-secondary: #475569;
+                --accent: #0284c7;
+                --accent-hover: #0369a1;
+                --border-color: #e2e8f0;
+                --badge-bg: #e0f2fe;
+                --code-bg: #f1f5f9;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #ffffff;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .metadata {
+            color: var(--text-secondary);
+            font-size: 0.925rem;
+        }
+
+        .summary-card {
+            background-color: var(--code-bg);
+            border-left: 4px solid var(--accent);
+            padding: 1.25rem 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .summary-card strong {
+            color: var(--accent);
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        li strong {
+            color: var(--text-primary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 0.85rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--code-bg);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        code {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.875em;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--accent-hover);
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+            .container {
+                padding: 1.5rem 1.25rem;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                margin-bottom: 0.75rem;
+                padding: 0.5rem;
+            }
+            td {
+                border: none;
+                padding: 0.5rem;
+            }
+            td:before {
+                font-weight: bold;
+                display: block;
+                color: var(--text-primary);
+                content: attr(data-label);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">Privacy First</span>
+            <h1>Privacy Policy for DNSGuard</h1>
+            <p class="metadata">
+                <strong>Package:</strong> <code>com.dnsguard.app</code> &bull; 
+                <strong>Last Updated:</strong> October 2, 2026 &bull; 
+                <strong>Effective Date:</strong> October 2, 2026
+            </p>
+        </header>
+
+        <div class="summary-card">
+            <strong>Key Summary:</strong> DNSGuard is built with a zero-knowledge architecture. <strong>We do not collect, store, sell, or monitor your personal data, browsing history, or DNS queries.</strong> All traffic filtering and encryption happen locally on your device or directly with trusted upstream DNS-over-HTTPS resolvers.
+        </div>
+
+        <h2>1. Information We Do NOT Collect</h2>
+        <p>Your privacy and digital anonymity are our highest priorities. Specifically:</p>
+        <ul>
+            <li><strong>No Personal Identifiable Information (PII):</strong> We do not ask for or collect names, email addresses, phone numbers, or account details.</li>
+            <li><strong>No User Account or Registration:</strong> You can use all features of the App immediately without creating an account or logging in.</li>
+            <li><strong>No Browsing History or Query Logs:</strong> We do not log, retain, or transmit domain names, websites visited, or search queries to any developer server.</li>
+            <li><strong>No Persistent Identifiers or Fingerprints:</strong> We do not track or store your Advertising ID (AAID), IMEI, MAC address, or hardware identifiers.</li>
+            <li><strong>No Third-Party Analytics or Ads:</strong> The App contains no advertising networks (e.g. AdMob) and no telemetry or tracking SDKs (e.g. Firebase Analytics, Meta SDK).</li>
+        </ul>
+
+        <h2>2. Information Processed Locally on Your Device</h2>
+        <p>DNSGuard requires local data processing to function as a high-performance encrypted resolver:</p>
+        <ul>
+            <li><strong>DNS Lookups:</strong> When activated, local DNS requests (port 53) are processed locally by the native engine (<code>rust-dns-core</code>) and securely transmitted via DNS-over-HTTPS. They are never written to disk or recorded by our team.</li>
+            <li><strong>In-Memory LRU Cache:</strong> To enhance speed and battery efficiency, recent DNS responses are cached in volatile device memory (RAM) with a 60-second Time-To-Live (TTL). This cache is destroyed when the application or service terminates.</li>
+            <li><strong>Real-Time Performance Counters:</strong> Ephemeral metrics (such as total query count, cache hit rate, and average latency in ms) are computed in device memory to display statistics on your dashboard. They are never transmitted off the device.</li>
+        </ul>
+
+        <h2>3. Android VpnService Disclosure</h2>
+        <p>In full compliance with Google Play Developer Policies regarding the <code>VpnService</code> API:</p>
+        <ul>
+            <li><strong>DNS-Only Split Tunneling:</strong> DNSGuard routes <em>only</em> traffic destined for the local virtual DNS address (<code>10.255.0.2/32</code> and <code>fd00::2/128</code>).</li>
+            <li><strong>No Interception of General Web Traffic:</strong> All your normal internet traffic—including web pages, video streams, messaging, downloads, and app communications—bypasses the VPN entirely and flows through your standard network interfaces.</li>
+            <li><strong>No Intermediary Proxy or VPN Servers:</strong> We do not operate VPN servers or proxy servers through which your traffic passes. Encrypted DNS queries travel directly between your device and upstream resolvers.</li>
+        </ul>
+
+        <h2>4. Upstream DNS Resolvers</h2>
+        <p>Encrypted queries (via DNS-over-HTTPS) are sent directly to respected public DNS providers that uphold strict privacy standards:</p>
+        <ul>
+            <li><strong>Cloudflare DNS</strong> (<code>cloudflare-dns.com</code> / <code>1.1.1.1</code>) &mdash; <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Privacy Policy</a></li>
+            <li><strong>Google Public DNS</strong> (<code>dns.google</code> / <code>8.8.8.8</code>) &mdash; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
+            <li><strong>Quad9</strong> (<code>dns.quad9.net</code> / <code>9.9.9.9</code>) &mdash; <a href="https://www.quad9.net/privacy/policy/" target="_blank" rel="noopener">Privacy Policy</a></li>
+            <li><strong>System DNS Fallback:</strong> Used only as an emergency failover if encrypted upstream connectivity is unreachable, preserving your active internet connection.</li>
+        </ul>
+
+        <h2>5. Android Permissions Explained</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Permission</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Permission"><code>BIND_VPN_SERVICE</code></td>
+                    <td data-label="Purpose">Creates the local split-tunnel interface to capture and encrypt DNS requests.</td>
+                </tr>
+                <tr>
+                    <td data-label="Permission"><code>INTERNET</code></td>
+                    <td data-label="Purpose">Transmits encrypted DNS-over-HTTPS packets to upstream DNS resolvers.</td>
+                </tr>
+                <tr>
+                    <td data-label="Permission"><code>ACCESS_NETWORK_STATE</code><br><code>CHANGE_NETWORK_STATE</code></td>
+                    <td data-label="Purpose">Detects network transitions (e.g., Wi-Fi to Mobile Data) for seamless socket recovery.</td>
+                </tr>
+                <tr>
+                    <td data-label="Permission"><code>FOREGROUND_SERVICE</code></td>
+                    <td data-label="Purpose">Maintains the continuous DNS protection engine in the background.</td>
+                </tr>
+                <tr>
+                    <td data-label="Permission"><code>POST_NOTIFICATIONS</code></td>
+                    <td data-label="Purpose">Displays the system-mandated notification showing active protection and quick toggles.</td>
+                </tr>
+                <tr>
+                    <td data-label="Permission"><code>RECEIVE_BOOT_COMPLETED</code></td>
+                    <td data-label="Purpose">Allows the app to automatically reactivate protection when the device boots up (if enabled).</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>6. Security</h2>
+        <p>All communication with upstream DNS resolvers is secured with modern Transport Layer Security (TLS 1.2 / TLS 1.3) with standard root certificate verification via <code>rustls</code>, shielding your lookups from ISP tracking, eavesdropping, and man-in-the-middle attacks.</p>
+
+        <h2>7. Children's Privacy (COPPA)</h2>
+        <p>DNSGuard does not knowingly collect or solicit any personal data from anyone under the age of 13. Since the app collects no personal data from any user, it is fully compliant with COPPA and global child privacy regulations.</p>
+
+        <h2>8. User Rights (GDPR & CCPA/CPRA)</h2>
+        <p>Under international privacy regulations (such as GDPR and CCPA), individuals hold rights regarding personal data access, deletion, and portability. <strong>Because DNSGuard neither collects, stores, nor transmits any personal user data, there is no personal data to view, export, or delete.</strong></p>
+
+        <h2>9. Policy Updates</h2>
+        <p>We may update this Privacy Policy from time to time. Any revisions will be reflected on this page with an updated effective date.</p>
+
+        <h2>10. Contact Information</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, please reach out to:</p>
+        <p>
+            <strong>DNSGuard Development Team</strong><br>
+            Email: <a href="mailto:soon001soon@gmail.com">soon001soon@gmail.com</a><br>
+            Application ID: <code>com.dnsguard.app</code>
+        </p>
+
+        <footer>
+            &copy; 2026 DNSGuard. All rights reserved. Built for private, fast, and secure browsing.
+        </footer>
+    </div>
+</body>
+</html>
